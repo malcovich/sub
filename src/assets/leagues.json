@@ -1,0 +1,18 @@
+{
+    "leagues" : [
+        {
+            "id" : 1,
+            "title": "MLS",
+            "img" : "mls-log.png",
+            "startDate" : "02 Mar 2019",
+            "endDate" : "17 Dec 2019"
+        },
+        {
+            "id" : 2,
+            "title": "Brasileiro Série B",
+            "img" : "logo-seria-b.png",
+            "startDate" : "26 APR 2019",
+            "endDate" : "02 DEC 2019"
+        }
+    ]
+}

@@ -12,6 +12,7 @@
     margin-top:20px;
     margin-bottom: 25px;
     color:#062f69;
+    font-size: 21px;
 }
 .match-title{ 
     font-size: 18px;
@@ -74,9 +75,9 @@
 }
 .logo-league {
     float: left;
+    height: 100px;
 }
 .league-details {
-    width: 65%;
     float: left;
 }
 .progress-bar__date {
@@ -101,4 +102,7 @@
             float:right;
         }
     }
+}
+.list-leagues {
+    padding: 20px;
 }

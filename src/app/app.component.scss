@@ -15,10 +15,10 @@
     width: 180px;
 }
 .big-screen {
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
     background: #fff;
-    height: calc(100vh - 165px);
+    min-height: calc(100vh - 165px);
 }
 .wraper { 
     background: #dce0e4;

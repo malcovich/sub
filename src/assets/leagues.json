@@ -13,6 +13,20 @@
             "img" : "logo-seria-b.png",
             "startDate" : "26 APR 2019",
             "endDate" : "02 DEC 2019"
+        },
+        {
+            "id" : 3,
+            "title": "Brasileiro Série A",
+            "img" : "logo-seria-b.png",
+            "startDate" : "26 APR 2019",
+            "endDate" : "02 DEC 2019"
+        },
+        {
+            "id" : 4,
+            "title": "Allsvenskan",
+            "img" : "allsve.png",
+            "startDate" : "31 MAR 2019",
+            "endDate" : "18 NOV 2019"
         }
     ]
 }

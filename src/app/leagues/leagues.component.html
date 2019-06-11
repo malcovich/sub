@@ -11,17 +11,14 @@
   </div>
 </div>
 <div class="container-fluid" *ngIf="isSubscribed">
-  <div class="row justify-content-around">
-    <div class="col-lg-4 col-sm-12 col-md-12" *ngFor="let league of leagues">
-      <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-12 league-block">
-            <img src="../../assets/{{league.img}}" alt="" class="logo-league">
-            <div class="league-details">
-              <h2 class="title">{{league.title}}</h2>
-            </div>
+    <div class="row list-leagues">
+      <div class="col-lg-3 col-sm-12 col-md-12 league-block" *ngFor="let league of leagues">
+          <img src="../../assets/{{league.img}}" alt="" class="logo-league">
+          <div class="league-details">
+            <h2 class="title">{{league.title}}</h2>
           </div>
       </div>
-  </div>
+    </div>
 </div>
 
 

@@ -9,161 +9,18 @@
 
     </div>
   </div>
-
 </div>
 <div class="container-fluid" *ngIf="isSubscribed">
   <div class="row justify-content-around">
-    <div class="col-lg-4 col-sm-12 col-md-12">
+    <div class="col-lg-4 col-sm-12 col-md-12" *ngFor="let league of leagues">
       <div class="row">
         <div class="col-sm-4 col-md-4 col-lg-12 league-block">
-            <img src="../../assets/mls-log.png" alt="" class="logo-league">
+            <img src="../../assets/{{league.img}}" alt="" class="logo-league">
             <div class="league-details">
-              <h2 class="title">MLS</h2>
-              <div class="progress-bar">
-                <div class="progress-bar__elapsed" style="width: 32.41%">
-                  <span class="progress-bar__inner"></span>
-                </div>
-              </div>
-              <span class="theme-color" title="Start date">
-                02 Mar
-              </span>
-              <span class="float-right " title="End date">
-                17 Dec
-              </span>
+              <h2 class="title">{{league.title}}</h2>
             </div>
-          </div>
-      
-      </div>
-   
-      <div class="row pl-10 pr-10 league-block">
-          <div class="col-sm-4 col-lg-12">
-              <img src="../../assets/allsve.png" alt="" class="logo-league">
-              <div class="league-details">
-                <h2 class="title">Allsvenskan</h2>
-                <div class="progress-bar">
-                  <div class="progress-bar__elapsed" style="width: 28.07%">
-                    <span class="progress-bar__inner"></span>
-                  </div>
-                </div>
-                <span class="theme-color" title="Start date">
-                  31 Mar
-                </span>
-                <span class="float-right " title="End date">
-                  18 Nov
-                </span>
-              </div>
           </div>
       </div>
-
-
-      <div class="row pl-10 pr-10 league-block">
-          <img src="../../assets/seriaa.png" alt="" class="logo-league">
-          <div class="league-details">
-            <h2 class="title">Brasileiro Série A</h2>
-            <div class="progress-bar">
-              <div class="progress-bar__elapsed" style="width: 16.3%">
-                <span class="progress-bar__inner"></span>
-              </div>
-            </div>
-            <span class="theme-color" title="Start date">
-              29 Apr
-            </span>
-            <span class="float-right " title="End date">
-              16 Dec
-            </span>
-          </div>
-      </div>
-      <!-- <div class="row p-4">
-        <h3 class="standing-title">Standing</h3>
-       
-      </div> -->
-    </div>
-    <div class="col-lg-8 col-sm-12 col-md-12">
-      <div class="row">
-        <div class="col-lg-5 col-sm-12 match p-4" *ngFor="let match of matches">
-          <h4 class="mb-4 match-title">{{match.title}}</h4>
-          <span>{{match.date}}</span>
-          <div class="row">
-            <div class="col-10">
-              <span class="theme-color chart-title" title="Start date">
-                Home win
-              </span>
-              <div class="progress-bar tile_bar">
-                <div class="progress-bar__elapsed" [ngStyle]="{width: match.home}">
-                  <span class="progress-bar__inner"></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-2 percent_margin">
-              {{match.home}}
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-10">
-              <span class="theme-color chart-title" title="Start date">
-                Draw
-              </span>
-              <div class="progress-bar tile_bar">
-                <div class="progress-bar__elapsed" [ngStyle]="{width: match.draw}">
-                  <span class="progress-bar__inner"></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-2 percent_margin">
-              {{match.draw}}
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-10">
-              <span class="theme-color chart-title" title="Start date">
-                Away win
-              </span>
-              <div class="progress-bar tile_bar">
-                <div class="progress-bar__elapsed" [ngStyle]="{width: match.away}">
-                  <span class="progress-bar__inner"></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-2 percent_margin">
-              {{match.away}}
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-10">
-              <span class="theme-color chart-title" title="Start date">
-                Over 2.5 goals
-              </span>
-              <div class="progress-bar tile_bar">
-                <div class="progress-bar__elapsed" style="width: 67%">
-                  <span class="progress-bar__inner"></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-2 percent_margin">
-              67%
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-10">
-              <span class="theme-color chart-title" title="Start date">
-                Under 2.5 goals
-              </span>
-              <div class="progress-bar tile_bar">
-                <div class="progress-bar__elapsed" style="width: 33%">
-                  <span class="progress-bar__inner"></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-2 percent_margin">
-              33%
-            </div>
-          </div>
-        </div>
-    
-      </div>
-    </div>
   </div>
 </div>
 

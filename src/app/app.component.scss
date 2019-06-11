@@ -8,8 +8,23 @@
     padding-left: 40px;
     box-shadow: 0 0 3px #b5b5b5;
     margin-bottom: 20px;
+    background: #fff;
 }
 
 .main_logo {
     width: 180px;
+}
+.big-screen {
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #fff;
+    height: calc(100vh - 165px);
+}
+.wraper { 
+    background: #dce0e4;
+}
+.footer {
+    background: #004c8f;
+    min-height: 70px;
+
 }

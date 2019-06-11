@@ -74,6 +74,7 @@
 }
 .logo-league {
     float: left;
+    height: 115px;
 }
 .league-details {
     width: 65%;
@@ -101,4 +102,11 @@
             float:right;
         }
     }
+}
+
+.sub-header{ 
+    padding: 25px 15px 30px 15px;;
+    border-bottom: 1px solid rgba(0,12,36,0.14);
+    overflow: hidden;
+    margin-bottom: 40px;
 }

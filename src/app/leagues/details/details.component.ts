@@ -1,7 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { LeaguesService } from '../leagues.service';
-import { timeout } from 'q';
 
 @Component({
   selector: 'app-league-details',

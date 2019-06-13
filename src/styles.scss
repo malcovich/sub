@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+.big-screen {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #fff;
+    margin-top:20px;
+    min-height: calc(100vh - 165px);
+}

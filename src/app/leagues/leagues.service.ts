@@ -14,4 +14,8 @@ export class LeaguesService{
   getLeagues(): Observable<any> {
     return this.http.get("./assets/leagues.json");
   }
+
+  public getUsers(): Observable<any> {
+    return this.http.get("./assets/users.json");
+  }
 }

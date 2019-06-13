@@ -7,19 +7,13 @@
     height:75px;
     padding-left: 40px;
     box-shadow: 0 0 3px #b5b5b5;
-    margin-bottom: 20px;
     background: #fff;
 }
 
 .main_logo {
     width: 180px;
 }
-.big-screen {
-    max-width: 1400px;
-    margin: 0 auto;
-    background: #fff;
-    min-height: calc(100vh - 165px);
-}
+
 .wraper { 
     background: #dce0e4;
 }
@@ -27,4 +21,23 @@
     background: #004c8f;
     min-height: 70px;
 
+}
+.menu {
+    padding-top:18px;
+    float: right;
+    ul{
+        list-style:none;
+        margin: 0 20px 0 0; 
+        li{
+            padding: 0 20px;
+            float: left;
+            a{
+                color:rgb(33, 37, 41);
+                font-weight: bold;
+                &:hover{
+                    border-bottom: 1px solid rgb(33, 37, 41);
+                }
+            }
+        }
+    }
 }

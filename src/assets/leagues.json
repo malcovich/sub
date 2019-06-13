@@ -27,6 +27,42 @@
             "img" : "allsve.png",
             "startDate" : "31 MAR 2019",
             "endDate" : "18 NOV 2019"
+        },
+        {
+            "id" : 5,
+            "title": "J.League",
+            "img" : "jleaaguelogo.png",
+            "startDate" : "22 FEB 2019",
+            "endDate" : "23 DEC 2019"
+        },
+        {
+            "id" : 6,
+            "title": "Premier Division",
+            "img" : "irlalogo.png",
+            "startDate" : "15 FEB 2019",
+            "endDate" : "07 Nov 2019"
+        },
+        {
+            "id" : 7,
+            "title": "CFA Super League",
+            "img" : "chilogo.png",
+            "startDate" : "01 MAR 2019",
+            "endDate" : "10 DEC 2019"
+        },
+        {
+            "id" : 8,
+            "title": "Eliteserien",
+            "img" : "norlogo.png",
+            "startDate" : "30 MAR 2019",
+            "endDate" : "30 DEC 2019"
+        },
+        {
+            "id" : 9,
+            "title": "K League 1",
+            "img" : "jorlogo.png",
+            "startDate" : "01 MAR 2019",
+            "endDate" : "10 DEC 2019"
         }
+        
     ]
 }

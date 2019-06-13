@@ -4,10 +4,20 @@
         <a href="#!" class="js-go-to navbar-brand u-header__logo" data-type="static" style="display: inline-block;">
             <img src="../assets/logo.svg" class="main_logo">
         </a>
+        <div class="menu">
+            <ul  class="text-uppercase w-100 g-font-weight-700 g-font-size-11 g-pt-20 g-pt-0--lg">
+                <li class="nav-item g-mr-15--lg g-mb-12 g-mb-0--lg active">
+                    <a [routerLink]="['/leagues']" class="nav-link p-0">Leagues
+                    </a>
+                </li>
+                
+                <li class="nav-item g-ml-15--lg g-mb-12 g-mb-0--lg">
+                    <a href="#contact" class="nav-link p-0">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="big-screen">
-        <router-outlet></router-outlet>
-    </div>
+    <router-outlet></router-outlet>
     <div class="footer"></div>
 </div>
 

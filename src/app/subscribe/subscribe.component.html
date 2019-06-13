@@ -1,0 +1,20 @@
+<div class="big-screen">
+  <div class="subscribe-block container-fluid">
+    <h2 class="main-title">StatsInSport is in beta testing.</h2>
+    <p class="sub-text">If you want early access, enter your email address that you used to subscribe
+      <br> or <a [routerLink]="['/request']">request early access now</a>
+    </p>
+    <form (submit)="onSubmit()">
+      <div class="row justify-content-md-center">
+        <div class="col-4">
+          <input name="email" #mail id="inputGroup-1_2"
+            class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4 g-px-14 g-py-20"
+            type="text" placeholder="Type your email">
+        </div>
+        <div class="col-1">
+          <span class="btn btn-info" (click)="mailSubmit($event)">Log in</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

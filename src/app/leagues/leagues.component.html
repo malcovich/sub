@@ -1,3 +1,4 @@
+<div class="big-screen">
 <div class="container-fluid" *ngIf="!isSubscribed">
   <div class="row justify-content-md-center">
     <div class="col-6">
@@ -10,9 +11,10 @@
     </div>
   </div>
 </div>
-<div class="container-fluid" *ngIf="isSubscribed">
+<div class="container-fluid wraper-league" *ngIf="isSubscribed">
+    <h2 class="league-title">Leagues</h2>
     <div class="row list-leagues">
-      <div class="col-lg-3 col-sm-12 col-md-12 league-block" *ngFor="let league of leagues">
+      <div class="col-lg-3 col-sm-12 col-md-12 league-block" *ngFor="let league of leagues"  [routerLink]="['/leagues', league.id]">
           <img src="../../assets/{{league.img}}" alt="" class="logo-league">
           <div class="league-details">
             <h2 class="title">{{league.title}}</h2>
@@ -20,6 +22,8 @@
       </div>
     </div>
 </div>
+</div>
+
 
 
 

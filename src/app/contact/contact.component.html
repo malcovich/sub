@@ -1,0 +1,22 @@
+<div class="big-screen abstract-bg">
+<div class="subscribe-block container-fluid">
+  <form (submit)="onSubmit()">
+      <div class="row justify-content-md-center">
+        <div class="col-5">
+            <div class="row">
+                  <h2 class="mb-4">Contact us</h2>
+            </div>
+            <div class="row">
+                <input name="email" #mail id="inputGroup-1_2"
+                  class="form-control mb-4 form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4 g-px-14 g-py-20"
+                  type="text" placeholder="Type your email">
+                 <textarea class="form-control mb-4 form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4 g-px-14 g-py-20"
+                  placeholder="Type your message" #message></textarea>
+                <span class="btn btn-info" (click)="mailSubmit($event)">Send message</span>
+                <p *ngIf="sended">Thank you for your message.</p>
+            </div>
+        </div>
+      </div>
+  </form>
+</div>
+</div>

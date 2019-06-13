@@ -6,6 +6,8 @@ import { NavigateAccessGuard } from './core/guards/navigate-access.guard';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { RequestComponent } from './request/request.component';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -13,6 +15,7 @@ const routes: Routes = [
   { path: 'leagues/:id', component: LeagueDetailsComponent, canActivate: [NavigateAccessGuard]},
   { path: 'subscribe', component: SubscribeComponent},
   { path: 'request', component: RequestComponent},
+  { path: 'contact', component: ContactComponent},
   { path: '**', redirectTo: '/'  }
   
 ];

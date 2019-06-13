@@ -12,12 +12,19 @@
                 </li>
                 
                 <li class="nav-item g-ml-15--lg g-mb-12 g-mb-0--lg">
-                    <a href="#contact" class="nav-link p-0">Contact</a>
+                    <a [routerLink]="['/contact']" class="nav-link p-0">Contact us</a>
+                </li>
+                <li class="nav-item g-ml-15--lg g-mb-12 g-mb-0--lg">
+                    <a [routerLink]="['/subscribe']" class="nav-link p-0">Log in</a>
                 </li>
             </ul>
         </div>
     </div>
     <router-outlet></router-outlet>
-    <div class="footer"></div>
+    <div class="footer">
+        <div class="container">
+            <p class="footer-text">	&copy; StatsInSport 2019</p>
+        </div>
+    </div>
 </div>
 

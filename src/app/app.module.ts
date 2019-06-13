@@ -11,7 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavigateAccessGuard } from './core/guards/navigate-access.guard';
 import { RequestComponent } from './request/request.component';
 import { HomeComponent } from './home/home.component';
-
+import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     LeagueDetailsComponent,
     SubscribeComponent,
     RequestComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

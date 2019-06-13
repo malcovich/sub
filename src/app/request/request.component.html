@@ -11,8 +11,9 @@
           type="text" placeholder="Type your email">
       </div>
       <div class="col-1">
-        <span class="btn btn-info" (click)="mailSubmit($event)">Log in</span>
+        <span class="btn btn-info" (click)="mailSubmit($event)">Send</span>
       </div>
+      <p *ngIf="sended">Request received, access will be granted.</p>
     </div>
   </form>
 </div>

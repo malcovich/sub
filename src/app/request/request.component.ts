@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RequestComponent implements OnInit {
   users;
+  sended:boolean = false;
   @ViewChild('mail') mail:ElementRef;
   isSubscribed:boolean = false;
   constructor( public leaguesServices: LeaguesService, private router: Router, public http : HttpClient) { }
@@ -22,7 +23,9 @@ export class RequestComponent implements OnInit {
 
   mailSubmit(e){
     e.stopPropagation();
-    this.http.post("./email.php", {'email': this.mail.nativeElement.value}).subscribe();
+    this.http.post("./email.php", {'email': this.mail.nativeElement.value}).subscribe(res=>{
+      this.sended = true;
+    });
   }
 
 }
